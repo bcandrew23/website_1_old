@@ -1,3 +1,4 @@
+
  body {
 	margin: 0px;
 	background: #222;
@@ -28,7 +29,7 @@ position: relative;
 }
 /*  Navigation bar */
 nav a {
-color: #444;
+color: #FFDF00;
 text-decoration: none;
 text-transform: uppercase;
 font-size: 14px;
@@ -41,7 +42,7 @@ nav a::before {
 content: '';
 display: block;
 height: 5px;
-background-color: #444;
+background-color: #FFDF00;
 
 position: absolute;
 top: 0;
@@ -89,46 +90,57 @@ font-size: 30px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-  .type {
+  .css-typing {
     text-align: center;
-    color: white;
-    padding-top: 300px;
-    width: 600px;
+    padding-top: 100px;
     margin-right: auto;
     margin-left: auto;
     font-size: 30px;
+    Width: 100%;
+}
+.css-typing p {
+  text-align: center;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 30px;
+  width: 12.08em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  border-right: .15em solid orange
+}
+
+@keyframes type {
+ from {
+   width: 0;
+ }
+}
+
+@-webkit-keyframes type {
+ from {
+   width: 0;
+ }
+}
+span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
   }
-  .row p {
-   animation: animated-text 4s steps(29,end) 1s 1 normal both,
-              animated-cursor 600ms steps(29,end) infinite;
- }
-
- .row p: nth-child(2)
- {
-     white-space:nowrap;
-     overflow:hidden;
-    animation: animated-text2 4s steps(29,end) 1s 1 normal both;
-     -webkit-animation-delay: 5s;
-     animation-delay: 5s;
-     -webkit-animation-fill-mode: forwards;
-     animation-fill-mode: forwards;
- }
-
- /* text animation */
-
- @keyframes animated-text{
-   from{width: 0;}
-   to{width: 472px;}
- }
-
- @keyframes animated-text2{
-   from{width: 0;}
-   to{width: 472px;}
- }
-
- /* cursor animations */
-
- @keyframes animated-cursor{
-   from{border-right-color: rgba(0,255,0,.75);}
-   to{border-right-color: transparent;}
- }
+  from {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

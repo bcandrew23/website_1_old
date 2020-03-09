@@ -104,12 +104,11 @@ font-size: 30px;
   margin-right: auto;
   margin-left: auto;
   font-size: 30px;
-  width: 12.08em;
+  width: 23.08em;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: type 2s steps(40, end);
-  animation: type 2s steps(40, end);
-  border-right: .15em solid orange
+  -webkit-animation: type 4.75s steps(40, end);
+  animation: type 4.75s steps(40, end);
 }
 
 @keyframes type {
